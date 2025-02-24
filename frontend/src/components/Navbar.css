@@ -1,35 +1,39 @@
+/* Navbar.css */
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #333; 
+    width: 100%; 
+    margin: 0; 
 }
 
 .logo {
-    height: 50px;
+    height: 50px; 
 }
 
 ul {
-    display: flex;
+    display: none; 
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-ul li {
-    margin: 0 15px;
+ul.open {
+    display: flex; 
+    background-color: #333; 
 }
+
+ul li {
+    margin: 0 15px; 
 
 ul li a {
-    color: white;
-    text-decoration: none;
-}
+    color: white; 
+    text-decoration: none; 
 
 ul li a:hover {
-    text-decoration: underline;
-}
-
-nav {
-    position: relative;
+    text-decoration: underline; 
 }
 
 .hamburger {
@@ -41,33 +45,17 @@ nav {
     cursor: pointer;
 }
 
-ul {
-    display: flex; 
-    list-style: none;
-    padding: 0;
-}
-
-ul.open {
-    display: flex;
-}
-
 @media (max-width: 768px) {
     .hamburger {
-        display: block;
+        display: block; 
     }
 
     ul {
-        display: none;
         flex-direction: column;
-        background-color: #333;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-    }
-
-    ul.open {
-        display: flex;
     }
 
     ul li {
