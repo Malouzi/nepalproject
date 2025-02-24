@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: #666;
+    text-align: center;
+    margin: 10px 0;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    max-width: 100%;
+}
